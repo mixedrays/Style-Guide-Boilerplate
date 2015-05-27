@@ -66,4 +66,31 @@
         echo '</div>';
     endforeach;
   }
+
+  // Recursively render files in specific directory
+  function renderFolderFiles($dir){
+      $files = scandir($dir);
+      sort($files);
+      echo '<ul>';
+      foreach($files as $file){
+          if($file != '.' && $file != '..'){
+              echo '<li style="border: 5px solid red;">';
+              echo $dir.'/'.$file;
+
+              if(is_dir($dir.'/'.$file)) {
+                  renderFolderFiles($dir.'/'.$file);
+              } else {
+                  echo '<div>';
+                  include($dir.'/'.$file);
+                  echo '</div>';
+              }
+
+              echo '</li>';
+          }
+      }
+      echo '</ul>';
+  }
+
+  renderFolderFiles('markup');
+
   ?>
