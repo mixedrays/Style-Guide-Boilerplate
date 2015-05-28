@@ -67,27 +67,35 @@
     endforeach;
   }
 
-  // Recursively render files in specific directory
+  // Recursively render files in specified directory
   function renderFolderFiles($dir){
       $files = scandir($dir);
       sort($files);
+
       echo '<ul>';
+
       foreach($files as $file){
           if($file != '.' && $file != '..'){
-              echo '<li style="border: 5px solid red;">';
-              echo $dir.'/'.$file;
+              $currentPath = $dir.'/'.$file;
+              $nestingDepth = substr_count($currentPath, '/');
+              $filename = preg_replace("/\.html$/i", "", $file);
+              $title = preg_replace("/\-/i", " ", $filename);
 
-              if(is_dir($dir.'/'.$file)) {
-                  renderFolderFiles($dir.'/'.$file);
+              echo '<h'. $nestingDepth .'><a id="sg-'.$filename.'" class="sg-anchor">'.$title.'</a></h'. $nestingDepth .'>';
+              echo $currentPath;
+
+              echo '<li style="border: 5px solid red;">';
+
+              if(is_dir($currentPath)) {
+                  renderFolderFiles($currentPath);
               } else {
-                  echo '<div>';
-                  include($dir.'/'.$file);
-                  echo '</div>';
+                  include($currentPath);
               }
 
               echo '</li>';
           }
       }
+
       echo '</ul>';
   }
 
