@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <title>Style Guide Boilerplate</title>
     <meta name="viewport" content="width=device-width">
+
     <!-- Style Guide Boilerplate Styles -->
-    <link rel="stylesheet" href="css/sg-style.css">
+    <link rel="stylesheet" href="css/sg-styles.css">
 
     <!-- Replace below stylesheet with your own stylesheet -->
     <link rel="stylesheet" href="css/style.css">
