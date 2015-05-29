@@ -9,6 +9,7 @@
 *.zip
 *.vi
 *~
+*.iml
 
 # OS or Editor folders
 tmp
