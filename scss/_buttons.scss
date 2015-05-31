@@ -1,0 +1,13 @@
+// BUTTONS
+.sg-btn {
+    padding: $btn-padding;
+    background-color: $btn-bg-color;
+    color: $btn-color;
+    text-decoration: none;
+}
+
+.sg-btn--select {
+    position: absolute;
+    top: 0;
+    right: 0;
+}

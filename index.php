@@ -6,28 +6,31 @@
     <title>Style Guide Boilerplate</title>
     <meta name="viewport" content="width=device-width">
 
+    <!-- Vendor styles   -->
+    <link rel="stylesheet" href="css/vendor/prism.css">
+
     <!-- Style Guide Boilerplate Styles -->
     <link rel="stylesheet" href="css/sg-styles.css">
 
     <!-- Replace below stylesheet with your own stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header id="top" class="sg-header sg-container">
+<body class="sg-body">
+    <div id="top" class="sg-header sg-container">
         <h1 class="sg-logo">STYLE GUIDE <span>BOILERPLATE</span></h1>
-    </header>
+    </div>
 
-    <aside class="sg-sidebar">
-        <nav class="sg-sidenav">
+    <div class="sg-sidebar">
+        <div class="sg-sidenav">
             <?php listFolderFiles('markup') ?>
-        </nav>
-    </aside>
+        </div>
+    </div>
 
-    <section class="sg-main-section sg-container">
+    <div class="sg-main-section sg-container">
         <?php renderFolderFiles('markup'); ?>
-    </section>
+    </div>
 
-    <script src="js/sg-plugins.js"></script>
+    <script src="js/vendor/prism/prism.js"></script>
     <script src="js/sg-scripts.js"></script>
 </body>
 </html>

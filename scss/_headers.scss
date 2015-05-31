@@ -1,0 +1,31 @@
+// HEADINGS
+.sg-h1, .sg-h2, .sg-h3, .sg-h4, .sg-h5, .sg-h6 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: $header-color;
+}
+
+.sg-h1 {
+    font-size: 36px
+}
+
+.sg-h2 {
+    font-size: 30px
+}
+
+.sg-h3 {
+    font-size: 24px
+}
+
+.sg-h4 {
+    font-size: 18px
+}
+
+.sg-h5 {
+    font-size: 14px
+}
+
+.sg-h6 {
+    font-size: 12px
+}
