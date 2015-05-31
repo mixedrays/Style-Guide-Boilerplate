@@ -17,17 +17,18 @@
 </head>
 <body class="sg-body">
     <div id="top" class="sg-header sg-container">
-        <h1 class="sg-logo">STYLE GUIDE <span>BOILERPLATE</span></h1>
+        <h1 class="sg-h1 sg-logo">STYLE GUIDE <span>BOILERPLATE</span></h1>
     </div>
 
-    <div class="sg-sidebar">
-        <div class="sg-sidenav">
+    <div class="sg-clearfix">
+        <div class="sg-sidebar sg-nav sg-container">
+            <h1 class="sg-h1">Navigation</h1>
             <?php listFolderFiles('markup') ?>
         </div>
-    </div>
 
-    <div class="sg-main-section sg-container">
-        <?php renderFolderFiles('markup'); ?>
+        <div class="sg-main-section sg-container">
+            <?php renderFolderFiles('markup'); ?>
+        </div>
     </div>
 
     <a href="#top" class="sg-btn sg-btn--top" title="Scroll to top">Top</a>

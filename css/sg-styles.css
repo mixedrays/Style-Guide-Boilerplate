@@ -1,4 +1,25 @@
-.sg-body { margin: 0; padding: 0; background-color: white; }
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+:after, :before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+.sg-body { margin: 0; }
+
+.sg-clearfix:before, .sg-clearfix:after { content: " "; display: table; }
+.sg-clearfix:after { clear: both; }
+
+.sg-header { background-color: #000; }
+.sg-header .sg-h1 { margin: 0; font-size: 30px; }
+.sg-header .sg-h1 span { font-weight: bold; }
+.sg-header .sg-logo { color: #fff; }
+
+.sg-nav { float: left; width: 20%; }
+.sg-nav ul { margin: 0; padding: 0; background-color: white; text-transform: capitalize; }
+.sg-nav ul ul { padding-left: 10px; margin-bottom: 10px; }
+.sg-nav ul li { list-style: none; }
+.sg-nav ul li a { display: block; padding: 3px 0; text-decoration: none; color: #000; }
+.sg-nav ul li a:hover { text-decoration: underline; }
+
+.sg-main-section { float: right; width: 80%; }
 
 .sg-title { padding-bottom: 5px; border-bottom: 1px solid #dddddd; text-transform: capitalize; }
 .sg-title a { color: inherit; }

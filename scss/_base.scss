@@ -1,8 +1,72 @@
 // BASE STYLES
+* {
+    box-sizing: border-box
+}
+
+:after, :before {
+    box-sizing: border-box
+}
+
 .sg-body {
     margin: 0;
-    padding: 0;
-    background-color: $body-bg;
+}
+
+.sg-clearfix {
+    @include clearfix;
+}
+
+.sg-header {
+    background-color: #000;
+
+    .sg-h1 {
+        margin: 0;
+        font-size: 30px;
+
+        span {
+            font-weight: bold;
+        }
+    }
+
+    .sg-logo {
+        color: #fff;
+    }
+}
+
+.sg-nav {
+    float: left;
+    width: 20%;
+
+    ul {
+        margin: 0;
+        padding: 0;
+        background-color: $body-bg;
+        text-transform: capitalize;
+
+        ul {
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                display: block;
+                padding: 3px 0;
+                text-decoration: none;
+                color: #000;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+.sg-main-section {
+    float: right;
+    width: 80%;
 }
 
 .sg-title {
