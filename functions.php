@@ -116,7 +116,7 @@ function renderFileExample($content)
 function renderFileSource($content)
 {
     echo '<div class="sg-sub-section sg-section-source">';
-    echo '<a class="sg-btn sg-btn--select" href="#">Select</a>';
+    echo '<a class="sg-btn sg-btn--select" href="#" title="Select source code">Select</a>';
     echo '<pre>';
     echo '<code class="language-markup">';
     echo htmlspecialchars($content);

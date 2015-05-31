@@ -1,0 +1,45 @@
+// SECTIONS
+.sg-section-group {
+    margin-bottom: $base-spacing*2;
+}
+
+.sg-section {
+    margin-bottom: $base-spacing*2;
+}
+
+.sg-sub-section {
+    margin-top: $base-spacing;
+}
+
+.sg-section-title {
+    margin-top: 0;
+    margin-bottom: -$base-spacing/2;
+
+    .sg-title {
+        padding-top: $base-spacing/2;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+
+.sg-section-docs {
+    font-size: 14px;
+}
+
+.sg-section-example {
+}
+
+.sg-section-source {
+    position: relative;
+
+    pre {
+        margin: 0;
+        font-size: 13px;
+    }
+
+    code {
+        display: inline-block;
+        padding-right: 50px;
+        white-space: pre-wrap;
+    }
+}

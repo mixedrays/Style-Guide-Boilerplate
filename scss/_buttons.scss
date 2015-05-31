@@ -11,3 +11,14 @@
     top: 0;
     right: 0;
 }
+
+.sg-btn--top {
+    position: fixed;
+    right: $base-spacing;
+    bottom: $base-spacing;
+    opacity: .3;
+
+    &:hover {
+        opacity: 1;
+    }
+}

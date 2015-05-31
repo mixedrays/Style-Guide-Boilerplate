@@ -30,6 +30,8 @@
         <?php renderFolderFiles('markup'); ?>
     </div>
 
+    <a href="#top" class="sg-btn sg-btn--top" title="Scroll to top">Top</a>
+
     <script src="js/vendor/prism/prism.js"></script>
     <script src="js/sg-scripts.js"></script>
 </body>
