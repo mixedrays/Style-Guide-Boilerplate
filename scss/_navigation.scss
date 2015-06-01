@@ -1,0 +1,58 @@
+.sg-nav {
+    ul {
+        margin: 0;
+        padding: 0;
+        background-color: $body-bg;
+        text-transform: capitalize;
+
+        ul {
+            position: relative;
+            margin-bottom: 10px;
+            border-left: 1px solid #ccc;
+
+            li {
+                position: relative;
+                padding-left: 15px;
+
+                &:before {
+                    position: absolute;
+                    top: 12px;
+                    left: 0;
+                    display: block;
+                    width: 13px;
+                    height: 1px;
+                    border-bottom: 1px solid #ccc;
+                    content: '';
+
+                }
+            }
+
+            &:after {
+                position: absolute;
+                bottom: 0;
+                left: -1px;
+                display: block;
+                width: 2px;
+                height: 11px;
+                background-color: $body-bg;
+                content: '';
+
+            }
+        }
+
+        li {
+            list-style: none;
+
+            a {
+                display: block;
+                padding: 3px 0;
+                color: #000;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
