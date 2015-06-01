@@ -61,5 +61,5 @@
 .sg-section-docs { font-size: 14px; }
 
 .sg-section-source { position: relative; }
-.sg-section-source pre { margin: 0; font-size: 13px; }
+.sg-section-source pre { margin: 0; }
 .sg-section-source code { display: inline-block; padding-right: 50px; white-space: pre-wrap; }
