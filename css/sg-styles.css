@@ -12,12 +12,7 @@
 .sg-header .sg-h1 span { font-weight: bold; }
 .sg-header .sg-logo { color: #fff; }
 
-.sg-nav { float: left; width: 20%; }
-.sg-nav ul { margin: 0; padding: 0; background-color: white; text-transform: capitalize; }
-.sg-nav ul ul { padding-left: 10px; margin-bottom: 10px; }
-.sg-nav ul li { list-style: none; }
-.sg-nav ul li a { display: block; padding: 3px 0; text-decoration: none; color: #000; }
-.sg-nav ul li a:hover { text-decoration: underline; }
+.sg-sidebar { float: left; width: 20%; }
 
 .sg-main-section { float: right; width: 80%; }
 
@@ -41,6 +36,12 @@
 .sg-h5 { font-size: 14px; }
 
 .sg-h6 { font-size: 12px; }
+
+.sg-nav ul { margin: 0; padding: 0; background-color: white; text-transform: capitalize; }
+.sg-nav ul ul { margin-bottom: 10px; padding-left: 10px; }
+.sg-nav ul li { list-style: none; }
+.sg-nav ul li a { display: block; padding: 3px 0; color: #000; text-decoration: none; }
+.sg-nav ul li a:hover { text-decoration: underline; }
 
 .sg-btn { padding: 5px 10px; background-color: #777777; color: white; text-decoration: none; }
 

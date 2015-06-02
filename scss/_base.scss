@@ -32,36 +32,9 @@
     }
 }
 
-.sg-nav {
+.sg-sidebar {
     float: left;
     width: 20%;
-
-    ul {
-        margin: 0;
-        padding: 0;
-        background-color: $body-bg;
-        text-transform: capitalize;
-
-        ul {
-            padding-left: 10px;
-            margin-bottom: 10px;
-        }
-
-        li {
-            list-style: none;
-
-            a {
-                display: block;
-                padding: 3px 0;
-                text-decoration: none;
-                color: #000;
-
-                &:hover {
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
 }
 
 .sg-main-section {
