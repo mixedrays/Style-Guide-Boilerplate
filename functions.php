@@ -20,14 +20,16 @@ function listFolderFiles($dir)
         if ($file != '.' && $file != '..') {
             $path = $dir . '/' . $file;
 
-            echo '<li>';
-            renterTitleFromPath($path, false);
-
             if (is_dir($path)) {
+                echo '<li class="sg-parent">';
+                renterTitleFromPath($path, false);
                 listFolderFiles($path);
+                echo '</li>';
+            } else {
+                echo '<li>';
+                renterTitleFromPath($path, false);
+                echo '</li>';
             }
-
-            echo '</li>';
         }
     }
     echo '</ul>';
@@ -108,21 +110,25 @@ function renderFileDescription($content)
 
 function renderFileExample($content)
 {
-    echo '<div class="sg-sub-section sg-section-example">';
-    echo $content;
-    echo '</div>';
+    if ($content != '') {
+        echo '<div class="sg-sub-section sg-section-example">';
+        echo $content;
+        echo '</div>';
+    }
 }
 
 function renderFileSource($content)
 {
-    echo '<div class="sg-sub-section sg-section-source">';
-    echo '<a class="sg-btn sg-btn--select" href="#" title="Select source code">Select</a>';
-    echo '<pre>';
-    echo '<code class="language-markup">';
-    echo htmlspecialchars($content);
-    echo '</code>';
-    echo '</pre>';
-    echo '</div>';
+    if ($content != '') {
+        echo '<div class="sg-sub-section sg-section-source">';
+        echo '<a class="sg-btn sg-btn--select" href="#" title="Select source code">Select</a>';
+        echo '<pre>';
+        echo '<code class="language-markup">';
+        echo htmlspecialchars($content);
+        echo '</code>';
+        echo '</pre>';
+        echo '</div>';
+    }
 }
 
 function removeHtmlComments($content = '')

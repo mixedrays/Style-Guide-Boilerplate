@@ -18,17 +18,14 @@
 .sg-header {
     background-color: #000;
 
-    .sg-h1 {
+    .sg-logo {
         margin: 0;
+        color: #fff;
         font-size: 30px;
 
         span {
             font-weight: bold;
         }
-    }
-
-    .sg-logo {
-        color: #fff;
     }
 }
 
@@ -40,16 +37,6 @@
 .sg-main-section {
     float: right;
     width: 80%;
-}
-
-.sg-title {
-    padding-bottom: 5px;
-    border-bottom: 1px solid $base-border-color;
-    text-transform: capitalize;
-
-    a {
-        color: inherit;
-    }
 }
 
 .sg-anchor {

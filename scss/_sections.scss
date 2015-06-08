@@ -11,17 +11,6 @@
     margin-top: $base-spacing;
 }
 
-.sg-section-title {
-    margin-top: 0;
-    margin-bottom: -$base-spacing/2;
-
-    .sg-title {
-        padding-top: $base-spacing/2;
-        padding-bottom: 0;
-        border-bottom: none;
-    }
-}
-
 .sg-section-docs {
     font-size: 14px;
 }
@@ -33,12 +22,15 @@
     position: relative;
 
     pre {
+        font-size: 14px;
+        line-height: 1.4;
         margin: 0;
+        max-height: 500px;
     }
 
     code {
-        display: inline-block;
-        padding-right: 50px;
-        white-space: pre-wrap;
+        padding: 0;
+        border: none;
+        background-color: transparent;
     }
 }

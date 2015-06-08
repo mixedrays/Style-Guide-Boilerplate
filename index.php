@@ -6,7 +6,7 @@
     <title>Style Guide Boilerplate</title>
     <meta name="viewport" content="width=device-width">
 
-    <!-- Vendor styles   -->
+    <!-- Vendor styles -->
     <link rel="stylesheet" href="css/vendor/prism.css">
 
     <!-- Style Guide Boilerplate Styles -->
@@ -22,7 +22,7 @@
 
     <div class="sg-clearfix">
         <div class="sg-sidebar sg-nav sg-container">
-            <h1 class="sg-h1">Navigation</h1>
+            <h1 class="sg-h1 sg-title">Navigation</h1>
             <?php listFolderFiles('markup') ?>
         </div>
 

@@ -8,22 +8,18 @@
 .sg-clearfix:after { clear: both; }
 
 .sg-header { background-color: #000; }
-.sg-header .sg-h1 { margin: 0; font-size: 30px; }
-.sg-header .sg-h1 span { font-weight: bold; }
-.sg-header .sg-logo { color: #fff; }
+.sg-header .sg-logo { margin: 0; color: #fff; font-size: 30px; }
+.sg-header .sg-logo span { font-weight: bold; }
 
 .sg-sidebar { float: left; width: 20%; }
 
 .sg-main-section { float: right; width: 80%; }
 
-.sg-title { padding-bottom: 5px; border-bottom: 1px solid #dddddd; text-transform: capitalize; }
-.sg-title a { color: inherit; }
-
 .sg-anchor { text-decoration: none; }
 
 .sg-container { padding: 20px; }
 
-.sg-h1, .sg-h2, .sg-h3, .sg-h4, .sg-h5, .sg-h6 { color: black; font-weight: 500; font-family: inherit; line-height: 1.1; }
+.sg-h1, .sg-h2, .sg-h3, .sg-h4, .sg-h5, .sg-h6 { margin-top: 20px; margin-bottom: 20px; color: black; font-weight: normal; font-family: "Arial Bold", Arial, Helvetica, sans-serif; line-height: 1.1; }
 
 .sg-h1 { font-size: 36px; }
 
@@ -37,13 +33,22 @@
 
 .sg-h6 { font-size: 12px; }
 
+.sg-main-section .sg-title { font-weight: bold; }
+.sg-main-section .sg-section-title { margin-top: 0; margin-bottom: -10px; }
+.sg-main-section .sg-section-title .sg-title { padding-bottom: 5px; border-bottom: 1px solid #dddddd; font-weight: normal; }
+
+.sg-title { text-transform: capitalize; }
+.sg-title a { color: inherit; }
+
 .sg-nav ul { margin: 0; padding: 0; background-color: white; text-transform: capitalize; }
 .sg-nav ul ul { margin-bottom: 10px; padding-left: 10px; }
 .sg-nav ul li { list-style: none; }
 .sg-nav ul li a { display: block; padding: 3px 0; color: #000; text-decoration: none; }
 .sg-nav ul li a:hover { text-decoration: underline; }
+.sg-nav .sg-parent > a { font-weight: bold; }
 
 .sg-btn { padding: 5px 10px; background-color: #777777; color: white; text-decoration: none; }
+.sg-btn:hover { background-color: #333333; color: white; }
 
 .sg-btn--select { position: absolute; top: 0; right: 0; }
 
@@ -56,11 +61,8 @@
 
 .sg-sub-section { margin-top: 20px; }
 
-.sg-section-title { margin-top: 0; margin-bottom: -10px; }
-.sg-section-title .sg-title { padding-top: 10px; padding-bottom: 0; border-bottom: none; }
-
 .sg-section-docs { font-size: 14px; }
 
 .sg-section-source { position: relative; }
-.sg-section-source pre { margin: 0; }
-.sg-section-source code { display: inline-block; padding-right: 50px; white-space: pre-wrap; }
+.sg-section-source pre { font-size: 14px; line-height: 1.4; margin: 0; max-height: 500px; }
+.sg-section-source code { padding: 0; border: none; background-color: transparent; }

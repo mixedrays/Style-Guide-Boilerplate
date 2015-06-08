@@ -1,8 +1,10 @@
 // HEADINGS
 .sg-h1, .sg-h2, .sg-h3, .sg-h4, .sg-h5, .sg-h6 {
+    margin-top: $base-spacing;
+    margin-bottom: $base-spacing;
     color: $header-color;
-    font-weight: 500;
-    font-family: inherit;
+    font-weight: normal;
+    font-family: "Arial Bold", Arial, Helvetica, sans-serif;
     line-height: 1.1;
 }
 
@@ -28,4 +30,30 @@
 
 .sg-h6 {
     font-size: 12px
+}
+
+// TITLES
+.sg-main-section {
+    .sg-title {
+        font-weight: bold;
+    }
+
+    .sg-section-title {
+        margin-top: 0;
+        margin-bottom: -$base-spacing/2;
+
+        .sg-title {
+            padding-bottom: 5px;
+            border-bottom: 1px solid $base-border-color;
+            font-weight: normal;
+        }
+    }
+}
+
+.sg-title {
+    text-transform: capitalize;
+
+    a {
+        color: inherit;
+    }
 }

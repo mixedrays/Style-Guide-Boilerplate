@@ -4,6 +4,11 @@
     background-color: $btn-bg-color;
     color: $btn-color;
     text-decoration: none;
+
+    &:hover {
+        background-color: $btn-hover-bg-color;
+        color: $btn-color;
+    }
 }
 
 .sg-btn--select {
