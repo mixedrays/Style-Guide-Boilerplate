@@ -71,7 +71,7 @@ function renderFile($path)
 
 function renterTitleFromPath($path, $wrapHeader)
 {
-    $replaceInFilename = array(".html", ".scss", ".", " ");
+    $replaceInFilename = array(".html", ".scss", ".", " ", "_");
     $nestingDepth = (substr_count($path, '/') > 6) ? 6 : substr_count($path, '/');
     $filename = str_replace($replaceInFilename, "", basename($path));
     $title = str_replace("-", " ", $filename);
